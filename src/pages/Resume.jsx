@@ -137,30 +137,46 @@ const skills = {
   Leadership: [
     'Engineering Management',
     'Technical Strategy',
-    'Hiring',
-    'Budgeting',
-    'Process Improvement',
+    'Hiring & Talent Development',
+    'Budget Management',
     'Agile / Scrum',
+    'Process Improvement',
+    'Cross-functional Leadership',
+    'Research Incubation',
   ],
   Architecture: [
     'Enterprise Frameworks',
     'Platform Modernization',
     'Product Architecture',
     'Business Process Re-architecture',
-    'Research Incubation',
+    'Component-Driven Design',
+    'UML / MDA',
   ],
-  Technologies: [
+  Languages: [
     'Java',
-    'Oracle DBMS',
-    'WebLogic',
-    'WebSphere',
+    'JavaScript',
+    'C / C++',
+    'SQL',
+    'XML / XSD / XSLT',
+    'PL/SQL',
+    'JSP',
+  ],
+  'Frameworks & Platforms': [
+    'JEE / J2EE',
     'Spring',
     'Hibernate',
-    'JavaScript',
+    'Struts',
+    'ADF',
+    'WebLogic',
+    'WebSphere',
     'ASP / IIS',
+  ],
+  Databases: [
+    'Oracle DBMS',
+    'SQL Server',
     'Sybase',
+    'DB2',
     'PowerBuilder',
-    'XML',
   ],
 }
 
@@ -176,6 +192,18 @@ export default function Resume() {
         <div className="resume-summary">
           {summary.map(item => (
             <p key={item}>{item}</p>
+          ))}
+        </div>
+        <div className="skills-bubbles">
+          {Object.entries(skills).map(([category, items]) => (
+            <div key={category} className="bubble-group">
+              <span className="bubble-category">{category}</span>
+              <div className="bubble-list">
+                {items.map(item => (
+                  <span key={item} className="bubble">{item}</span>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </section>
@@ -215,21 +243,6 @@ export default function Resume() {
         ))}
       </section>
 
-      <section className="card resume-section">
-        <h2>Skills</h2>
-        <div className="skills-grid">
-          {Object.entries(skills).map(([category, items]) => (
-            <div key={category} className="skill-group">
-              <div className="skill-category">{category}</div>
-              <div className="tag-list">
-                {items.map(item => (
-                  <span key={item} className="tag">{item}</span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
     </div>
   )
 }

@@ -59,14 +59,15 @@
 }
 
 .bio h2,
-.skills-overview h2 {
+.so-what h2 {
   font-size: 1.25rem;
   font-weight: 700;
   margin: 0 0 var(--spacing-sm);
   color: var(--color-text);
 }
 
-.bio p {
+.bio p,
+.so-what p {
   color: var(--color-text-muted);
   line-height: 1.75;
   margin: 0 0 var(--spacing-sm);
@@ -76,20 +77,6 @@
   margin-bottom: 0;
 }
 
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.tag {
-  background: var(--color-accent-light);
-  color: var(--color-accent);
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 4px 12px;
-  border-radius: 20px;
-}
 
 @media (max-width: 480px) {
   .hero {
