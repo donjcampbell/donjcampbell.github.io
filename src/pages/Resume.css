@@ -1,0 +1,119 @@
+.resume-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-xl) 0 var(--spacing-md);
+}
+
+.resume-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.resume-section h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 0.8rem;
+  margin: 0 0 var(--spacing-md);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.resume-summary p {
+  margin: 0 0 12px;
+  color: var(--color-text-muted);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.resume-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.resume-entry {
+  margin-bottom: var(--spacing-md);
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  margin-bottom: 8px;
+}
+
+.entry-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.entry-subtitle {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.entry-period {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+.entry-bullets {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.entry-bullets li {
+  margin-bottom: 4px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.skill-category {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
